@@ -35,7 +35,8 @@ ul,li{
 }
 .header{
     height: 620px;
-    background: url(../img/back.png) no-repeat center;
+    background: url(../img/back.png) no-repeat center ;
+    background-size: cover;
 }
 .logo{
     position: absolute;
@@ -253,6 +254,7 @@ ul,li{
     border-radius: 5px;
     padding: 30px;
     width: 660px;
+   
 }
 
 .image-modal img {
@@ -436,34 +438,41 @@ ul,li{
 .header__menu{
     display: none;
 }
-/*1200-1440*/
+/*1260-1440*/
 @media screen and (max-width:1440px) {
 	.container{
-		max-width: 1140px;
+		max-width: 1240px;
 	}
     .logo{
         width:290px;
-        top: 280px;
+        top: 180px;
     }
     .services__set{
         flex-wrap: wrap;
-        gap: 40px;
+        
         justify-content: space-evenly;
     }
     .box__set{
         flex-wrap: wrap;
-        gap: 40px;
+       
         justify-content: space-evenly;
     }
     .gallery__set{
         flex-wrap: wrap;
-        gap: 40px;
+      
         justify-content: space-evenly;
+    }
+    .header{
+        background: url(../img/back1440.png) no-repeat center ;
+        height: 465px;
+    }
+    .btn__down{
+        margin-top: 270px;
     }
     
 }
-/*992-1199*/
-@media screen and (max-width:1199px) {
+/*992-1259*/
+@media screen and (max-width:1259px) {
 	.container{
 		max-width: 960px;
 	}
@@ -476,16 +485,29 @@ ul,li{
     .header__mod{
         display: block;
     }
+    
     .header__mod{
-        height: 620px;
-        background: url(../img/back.png) no-repeat center;
+        background: url(../img/back1259.png) no-repeat center ;
+        height: 407px;
+    }
+    .btn__down{
+        margin-top: 210px;
     }
     .offer__set{
         flex-wrap: wrap;
         gap: 40px;
         justify-content: space-evenly;
     }
-
+    .services__set{
+        gap: 40px;
+    }
+    .box__set{
+        gap: 40px;
+    }
+    .gallery__set{
+        gap: 40px;
+    }
+    
 }
 
 /*768-991*/
@@ -542,6 +564,13 @@ ul,li{
     .menu__footer{
         display: none;
     }
+    .header__mod{
+        background: url(../img/back991.png) no-repeat center ;
+        height: 320px;
+    }
+    .btn__down{
+      display: none;
+    }
 }	
 
 /*576-767*/
@@ -566,7 +595,10 @@ ul,li{
     .contacts__form{
         width: 100%;
     }
-	
+	.header__mod{
+        background: url(../img/back767.png) no-repeat center ;
+        height: 248px;
+    }
 }
 /*458-575*/
 @media screen and (max-width:575px){
@@ -602,6 +634,10 @@ ul,li{
     .rights{
         font-size: 12px;
     }
+    .header__mod{
+        background: url(../img/back575.png) no-repeat center ;
+        height:186px;
+    }
 }
 /*375-457*/
 @media screen and (max-width:457px){
@@ -613,6 +649,10 @@ ul,li{
     .header__btn{
     
         margin-right: 15px;
+    }
+    .header__mod{
+        background: url(../img/back457.png) no-repeat center ;
+        height:148px;
     }
     
 }
@@ -641,6 +681,10 @@ ul,li{
     }
     .btn__form_file{
         justify-content: center;
+    }
+    .header__mod{
+        background: url(../img/back374.png) no-repeat center ;
+        height:121px;
     }
 }
 
