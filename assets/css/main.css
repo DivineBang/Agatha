@@ -244,17 +244,31 @@ ul,li{
     z-index: 8; 
 }
 
-.image-modal {
+/* .image-modal {
     display: none;
     position: fixed;
     top: 0;
-    transform: translate(50%, 50%);
+    transform: translate(46%, 50%);
     z-index: 9;
     background-color: #FFF;
     border-radius: 5px;
     padding: 30px;
     width: 660px;
-   
+
+} */
+
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 30px;
+  width: 660px;
+  height: auto;
 }
 
 .image-modal img {
@@ -569,7 +583,11 @@ ul,li{
         height: 320px;
     }
     .btn__down{
-      display: none;
+        margin-top: 120px;
+        width: 155px;
+    }
+    .btn__text{
+        font-size: 15px;
     }
 }	
 
@@ -598,6 +616,10 @@ ul,li{
 	.header__mod{
         background: url(../img/back767.png) no-repeat center ;
         height: 248px;
+    }
+    .btn__down{
+        margin-top: 75px;
+        
     }
 }
 /*458-575*/
@@ -638,6 +660,15 @@ ul,li{
         background: url(../img/back575.png) no-repeat center ;
         height:186px;
     }
+    .btn__down{
+        margin-top: 35px;
+        width: 45px;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+    .btn__text{
+        display: none;
+    }
 }
 /*375-457*/
 @media screen and (max-width:457px){
@@ -654,7 +685,11 @@ ul,li{
         background: url(../img/back457.png) no-repeat center ;
         height:148px;
     }
-    
+    .btn__down{
+        margin-top: 10px;
+        width: 35px;
+        padding: 5px 10px;
+    }
 }
 /*320-374*/
 @media screen and (max-width:374px){
@@ -685,6 +720,11 @@ ul,li{
     .header__mod{
         background: url(../img/back374.png) no-repeat center ;
         height:121px;
+    }
+    .btn__down{
+        margin-top: -7px;
+        width: 25px;
+        padding: 3px 5px;
     }
 }
 
