@@ -1,7 +1,7 @@
 
 //Галерея
 function openImage(element) {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 992) {
         const image = element.querySelector('.gallery__wrapp_img').src;
         const modal = document.querySelector('.image-modal');
         const imageElement = modal.querySelector('.modal-image');
@@ -16,7 +16,7 @@ function openImage(element) {
 }
 
 function closeModal(element) {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 992) {
         const modal = element.closest('.image-modal');
         const overlay = document.querySelector('.overlay');
 
